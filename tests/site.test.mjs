@@ -14,6 +14,11 @@ test("exports the complete Slovak LNV12 site", async () => {
   assert.match(html, /id="vysledky"/);
   assert.match(html, /id="galeria"/);
   assert.match(html, /1FAIpQLSeUIPDplANcoHDe4oJgq2XC4y0WJfv8PoZ7759JTRmaWPHPiA/);
+  assert.match(html, /975 km/);
+  assert.match(html, /Michaela Hubinská/);
+  assert.match(html, /t44mW6GGp3nFvVn49/);
+  assert.match(html, /PcTa5WBSh8ub52ED9/);
+  assert.match(html, /lnv12-trail-2026\.mp4/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|SkeletonPreview/);
 });
 
@@ -23,5 +28,8 @@ test("includes custom-domain and poster assets", async () => {
   await access(new URL("../dist/client/.nojekyll", import.meta.url));
   await access(new URL("../dist/client/lnv12-2026-poster.webp", import.meta.url));
   await access(new URL("../dist/client/lnv12-2026-poster.jpg", import.meta.url));
+  await access(new URL("../dist/client/lnv12-2025-poster.png", import.meta.url));
+  await access(new URL("../dist/client/lnv12-2024-poster.png", import.meta.url));
+  await access(new URL("../dist/client/media/lnv12-trail-2026.mp4", import.meta.url));
   await access(new URL("source-assets/lnv12-2026-poster-original.png", root));
 });

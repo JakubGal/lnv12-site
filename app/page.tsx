@@ -1,6 +1,6 @@
 import { Countdown } from "./components/Countdown";
 import { ResultsArchive } from "./components/ResultsArchive";
-import { FACEBOOK_URL, REGISTRATION_URL, RESULT_YEARS } from "./data";
+import { FACEBOOK_GROUP_URL, FACEBOOK_URL, PHOTO_ALBUMS, REGISTRATION_URL, RESULT_YEARS } from "./data";
 
 const openNewTab = { target: "_blank", rel: "noreferrer" } as const;
 
@@ -132,10 +132,10 @@ export default function Home() {
               <p className="section-kicker">Výsledky a história</p>
               <h2>Kilometre, ktoré<br />si zaslúžia pamäť.</h2>
             </div>
-            <p>
-              Tu budú žiť rebríčky aktuálneho ročníka aj overené výsledky z minulých rokov.
-              Vyber si ročník a pozri jeho archív.
-            </p>
+          <p>
+              Tu budú žiť overené štatistiky, výrazné výkony aj výsledky z jednotlivých
+              ročníkov. Vyber si rok a pozri jeho archív.
+          </p>
           </div>
           <ResultsArchive years={RESULT_YEARS} />
         </div>
@@ -149,21 +149,36 @@ export default function Home() {
           </div>
           <p>Fotografie budeme ukladať podľa ročníkov, aby sa k nim dalo kedykoľvek vrátiť.</p>
         </div>
+
+        <div className="shell trail-feature">
+          <div className="trail-copy">
+            <span>Trať 2026</span>
+            <h3>Pozri si trasu tohtoročnej výzvy.</h3>
+            <p>Krátke video z trate ti ukáže, čo ťa čaká medzi Ludanicami a nočnou krajinou.</p>
+          </div>
+          <video controls preload="metadata" poster="/lnv12-2026-poster.webp">
+            <source src="/media/lnv12-trail-2026.mp4" type="video/mp4" />
+            Tvoj prehliadač nepodporuje prehrávanie videa.
+          </video>
+        </div>
+
         <div className="shell gallery-grid">
           <article className="gallery-card gallery-card-image">
             <img src="/lnv12-2026-poster.webp" alt="Plagát Ludanickej nočnej výzvy 2026" />
-            <div className="gallery-overlay"><span>Aktuálny ročník</span><h3>2026</h3><p>Plagát a informácie</p></div>
+            <div className="gallery-overlay"><span>Aktuálny ročník</span><h3>2026</h3><p>Plagát, informácie a video trate</p></div>
           </article>
-          <article className="gallery-card gallery-card-empty blue-card">
-            <span>Archív</span><h3>2025</h3><p>Fotografie dopĺňame</p><i aria-hidden="true">＋</i>
-          </article>
-          <article className="gallery-card gallery-card-empty gold-card">
-            <span>Archív</span><h3>2024</h3><p>Fotografie dopĺňame</p><i aria-hidden="true">＋</i>
-          </article>
+          <a className="gallery-card gallery-card-image gallery-card-link" href={PHOTO_ALBUMS["2025"]} aria-label="Otvoriť fotogalériu LNV12 2025 v Google Fotkách" {...openNewTab}>
+            <img src="/lnv12-2025-poster.png" alt="Plagát Ludanickej nočnej výzvy 2025" />
+            <div className="gallery-overlay"><span>Google Fotky</span><h3>2025</h3><p>Otvoriť celý album ↗</p></div>
+          </a>
+          <a className="gallery-card gallery-card-image gallery-card-link" href={PHOTO_ALBUMS["2024"]} aria-label="Otvoriť fotogalériu LNV12 2024 v Google Fotkách" {...openNewTab}>
+            <img src="/lnv12-2024-poster.png" alt="Plagát Ludanickej nočnej výzvy 2024" />
+            <div className="gallery-overlay"><span>Google Fotky</span><h3>2024</h3><p>Otvoriť celý album ↗</p></div>
+          </a>
         </div>
         <div className="shell gallery-cta">
-          <p>Máš fotografie zo staršieho ročníka?</p>
-          <a href={FACEBOOK_URL} {...openNewTab}>Pošli nám ich cez Facebook <span aria-hidden="true">↗</span></a>
+          <p>Ďalšie fotografie, výsledky a príbehy nájdeš v skupine Bežci spod Tribeča.</p>
+          <a href={FACEBOOK_GROUP_URL} {...openNewTab}>Otvoriť Facebook skupinu <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
@@ -221,6 +236,7 @@ export default function Home() {
           <p>Beh · turistika · noc · Ludanice</p>
           <div className="footer-links">
             <a href={FACEBOOK_URL} {...openNewTab}>Facebook ↗</a>
+            <a href={FACEBOOK_GROUP_URL} {...openNewTab}>Skupina ↗</a>
             <a href="#domov">Späť hore ↑</a>
           </div>
         </div>

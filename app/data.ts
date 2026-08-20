@@ -5,12 +5,36 @@ export type Result = {
   category?: string;
 };
 
+export type ArchiveStat = {
+  value: string;
+  label: string;
+};
+
+export type DisciplineSummary = {
+  label: string;
+  laps: number;
+  distanceKm: number;
+};
+
+export type PerformanceHighlight = {
+  label: string;
+  name: string;
+  distanceKm: number;
+  detail: string;
+};
+
 export type ResultYear = {
   year: string;
   label: string;
+  title: string;
   status: string;
   note: string;
   results: Result[];
+  stats?: ArchiveStat[];
+  disciplines?: DisciplineSummary[];
+  highlights?: PerformanceHighlight[];
+  sourceUrl?: string;
+  sourceLabel?: string;
 };
 
 // Add verified finishers here after each edition. The table renders automatically.
@@ -18,6 +42,7 @@ export const RESULT_YEARS: ResultYear[] = [
   {
     year: "2026",
     label: "Aktuálny ročník",
+    title: "Výsledky ročníka 2026",
     status: "21. – 22. augusta",
     note: "Výsledky zverejníme po skončení podujatia.",
     results: [],
@@ -25,20 +50,43 @@ export const RESULT_YEARS: ResultYear[] = [
   {
     year: "2025",
     label: "Archív",
+    title: "Výsledky ročníka 2025",
     status: "Dopĺňame",
     note: "Overené výsledky ročníka 2025 pripravujeme na zverejnenie.",
     results: [],
   },
   {
     year: "2024",
-    label: "Archív",
-    status: "Dopĺňame",
-    note: "Staršie výsledky postupne digitalizujeme.",
+    label: "Prvý ročník",
+    title: "Štatistiky a výrazné výkony · 2024",
+    status: "26. júla 2024",
+    note: "Overené súhrnné údaje z prvého ročníka Ludanickej nočnej výzvy.",
     results: [],
+    stats: [
+      { value: "39", label: "účastníkov" },
+      { value: "130", label: "okruhov" },
+      { value: "975 km", label: "spolu" },
+    ],
+    disciplines: [
+      { label: "Bežci", laps: 74, distanceKm: 555 },
+      { label: "Chodci", laps: 25, distanceKm: 187.5 },
+      { label: "Cyklisti", laps: 31, distanceKm: 232.5 },
+    ],
+    highlights: [
+      { label: "Cyklistika", name: "Marek Košecký", distanceKm: 165, detail: "22 okruhov · 2 655 nastúpaných metrov" },
+      { label: "Chôdza", name: "Pavol Uhlár", distanceKm: 52.5, detail: "7 okruhov · celých 12 hodín" },
+      { label: "Chôdza", name: "Patrik Kmeťo", distanceKm: 45, detail: "6 okruhov · celých 12 hodín" },
+      { label: "Beh", name: "Michaela Hubinská", distanceKm: 45, detail: "6 okruhov · najviac medzi bežkyňami" },
+      { label: "Beh", name: "Martin Brezina", distanceKm: 45, detail: "6 okruhov · najviac medzi bežcami" },
+      { label: "Beh", name: "Ján Kušš", distanceKm: 30, detail: "4 okruhy · najstarší účastník, 74 rokov" },
+    ],
+    sourceUrl: "https://www.facebook.com/groups/788216162580730/permalink/1386003902801950/",
+    sourceLabel: "Zdroj: súhrn organizátorov na Facebooku",
   },
   {
     year: "Staršie",
     label: "História LNV",
+    title: "Staršie ročníky",
     status: "Pripravujeme",
     note: "Máte výsledky alebo fotografie zo starších ročníkov? Ozvite sa nám cez Facebook.",
     results: [],
@@ -50,3 +98,11 @@ export const REGISTRATION_URL =
 
 export const FACEBOOK_URL =
   "https://www.facebook.com/100055726104070/photos/1589891889544999/";
+
+export const FACEBOOK_GROUP_URL =
+  "https://www.facebook.com/groups/788216162580730/";
+
+export const PHOTO_ALBUMS = {
+  "2024": "https://photos.app.goo.gl/t44mW6GGp3nFvVn49",
+  "2025": "https://photos.app.goo.gl/PcTa5WBSh8ub52ED9",
+} as const;

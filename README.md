@@ -9,7 +9,9 @@ Originálny plnofarebný plagát je bezpečne uložený v `source-assets/`; web 
 - registráciu cez aktuálny Google formulár,
 - termín, čas, základné pravidlá a odpočítavanie,
 - rebríčky po ročníkoch,
-- fotogalériu po ročníkoch,
+- overené štatistiky a výrazné výkony z roku 2024,
+- odkazy na fotoalbumy 2024 a 2025,
+- video trate ročníka 2026,
 - praktické otázky a odpovede,
 - mobilné aj desktopové zobrazenie.
 
@@ -50,6 +52,10 @@ Poradie, desatinná čiarka aj kilometre sa na stránke zobrazia automaticky.
 3. Pred zverejnením skontrolujte, že máte súhlas na použitie fotografií.
 
 Odporúčaná veľkosť jednej fotografie je približne 1600 px na dlhšej strane a do 500 kB.
+
+Aktuálne verejné albumy sú uložené v `PHOTO_ALBUMS` v `app/data.ts`. Video trate je v
+`public/media/lnv12-trail-2026.mp4`; atribút `preload="metadata"` zabraňuje stiahnutiu
+celého videa pred spustením prehrávania.
 
 ## Bezplatné publikovanie
 
