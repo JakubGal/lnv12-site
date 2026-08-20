@@ -9,7 +9,7 @@ Originálny plnofarebný plagát je bezpečne uložený v `source-assets/`; web 
 - registráciu cez aktuálny Google formulár,
 - termín, čas, základné pravidlá a odpočítavanie,
 - rebríčky po ročníkoch,
-- overené štatistiky a výrazné výkony z roku 2024,
+- overené štatistiky a výrazné výkony z rokov 2024 a 2025,
 - odkazy na fotoalbumy 2024 a 2025,
 - video trate ročníka 2026,
 - praktické otázky a odpovede,

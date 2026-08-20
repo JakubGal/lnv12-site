@@ -65,7 +65,11 @@ export function ResultsArchive({ years }: { years: ResultYear[] }) {
                   <article className="performance-row" key={`${highlight.label}-${highlight.name}`}>
                     <span>{highlight.label}</span>
                     <div><strong>{highlight.name}</strong><small>{highlight.detail}</small></div>
-                    <strong>{highlight.distanceKm.toLocaleString("sk-SK")} km</strong>
+                    <strong>
+                      {highlight.distanceKm !== undefined
+                        ? `${highlight.distanceKm.toLocaleString("sk-SK")} km`
+                        : "Účasť"}
+                    </strong>
                   </article>
                 ))}
               </div>

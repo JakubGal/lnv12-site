@@ -16,6 +16,10 @@ test("exports the complete Slovak LNV12 site", async () => {
   assert.match(html, /1FAIpQLSeUIPDplANcoHDe4oJgq2XC4y0WJfv8PoZ7759JTRmaWPHPiA/);
   assert.match(html, /975 km/);
   assert.match(html, /Michaela Hubinská/);
+  assert.match(html, /2 475 km/);
+  assert.match(html, /Jozef Trsťan/);
+  assert.match(html, /Mia Brezinová/);
+  assert.match(html, /Janko Kušš/);
   assert.match(html, /t44mW6GGp3nFvVn49/);
   assert.match(html, /PcTa5WBSh8ub52ED9/);
   assert.match(html, /lnv12-trail-2026\.mp4/);

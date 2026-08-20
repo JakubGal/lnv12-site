@@ -19,7 +19,7 @@ export type DisciplineSummary = {
 export type PerformanceHighlight = {
   label: string;
   name: string;
-  distanceKm: number;
+  distanceKm?: number;
   detail: string;
 };
 
@@ -49,11 +49,32 @@ export const RESULT_YEARS: ResultYear[] = [
   },
   {
     year: "2025",
-    label: "Archív",
-    title: "Výsledky ročníka 2025",
-    status: "Dopĺňame",
-    note: "Overené výsledky ročníka 2025 pripravujeme na zverejnenie.",
+    label: "Druhý ročník",
+    title: "Štatistiky a výrazné výkony · 2025",
+    status: "22. – 23. augusta 2025",
+    note: "Overený súhrn druhého ročníka Ludanickej nočnej výzvy.",
     results: [],
+    stats: [
+      { value: "153", label: "účastníkov" },
+      { value: "330", label: "okruhov" },
+      { value: "2 475 km", label: "spolu" },
+    ],
+    highlights: [
+      { label: "Beh", name: "Jozef Trsťan", distanceKm: 75, detail: "10 okruhov · najviac medzi bežcami" },
+      { label: "Beh", name: "Jozef Bielich", distanceKm: 67.5, detail: "9 okruhov" },
+      { label: "Beh", name: "Jakub Bucha", distanceKm: 67.5, detail: "9 okruhov" },
+      { label: "Chôdza", name: "Filip Kmeťo", distanceKm: 60, detail: "8 okruhov · najviac medzi chodcami" },
+      { label: "Chôdza", name: "Patrik Kmeťo", distanceKm: 52.5, detail: "7 okruhov" },
+      { label: "Deti", name: "Mia Brezinová", distanceKm: 22.5, detail: "3 okruhy · najlepší detský výkon" },
+      {
+        label: "Ocenenie",
+        name: "Gabriela Doležajová · Stanislav Gerhát · Helena Košecká",
+        detail: "medzi najstaršími účastníkmi",
+      },
+      { label: "Beh", name: "Janko Kušš", distanceKm: 30, detail: "4 okruhy · 75 rokov" },
+    ],
+    sourceUrl: "https://www.facebook.com/groups/788216162580730/",
+    sourceLabel: "Zdroj: súhrn Bežcov spod Tribeča na Facebooku",
   },
   {
     year: "2024",
