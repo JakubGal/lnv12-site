@@ -41,3 +41,13 @@ test("includes custom-domain and poster assets", async () => {
   await access(new URL("../dist/client/media/lnv12-trail-2026.mp4", import.meta.url));
   await access(new URL("source-assets/lnv12-2026-poster-original.png", root));
 });
+
+test("keeps display typography readable across responsive layouts", async () => {
+  const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+
+  assert.match(css, /h1\s*\{[\s\S]*?line-height:\s*1\.02;/);
+  assert.match(css, /\.section-heading h2\s*\{[\s\S]*?line-height:\s*1\.1;/);
+  assert.match(css, /\.route-grid h2[^\n]*\/1\.06 Impact/);
+  assert.match(css, /\.trail-copy h3[^\n]*\/1\.08 Impact/);
+  assert.match(css, /\.final-cta h2[^\n]*\/1\.02 Impact/);
+});
