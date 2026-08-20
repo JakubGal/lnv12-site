@@ -104,14 +104,6 @@ export const RESULT_YEARS: ResultYear[] = [
     sourceUrl: "https://www.facebook.com/groups/788216162580730/permalink/1386003902801950/",
     sourceLabel: "Zdroj: súhrn organizátorov na Facebooku",
   },
-  {
-    year: "Staršie",
-    label: "História LNV",
-    title: "Staršie ročníky",
-    status: "Pripravujeme",
-    note: "Máte výsledky alebo fotografie zo starších ročníkov? Ozvite sa nám cez Facebook.",
-    results: [],
-  },
 ];
 
 export const REGISTRATION_URL =

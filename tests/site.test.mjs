@@ -14,6 +14,7 @@ test("exports the complete Slovak LNV12 site", async () => {
   assert.match(html, /Každý krok/);
   assert.match(html, /mobile-action-bar/);
   assert.match(html, /Mobilná navigácia/);
+  assert.doesNotMatch(html, /Staršie ročníky/);
   assert.match(html, /id="vysledky"/);
   assert.match(html, /id="galeria"/);
   assert.match(html, /1FAIpQLSeUIPDplANcoHDe4oJgq2XC4y0WJfv8PoZ7759JTRmaWPHPiA/);
