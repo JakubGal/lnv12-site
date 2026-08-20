@@ -13,7 +13,8 @@ Originálny plnofarebný plagát je bezpečne uložený v `source-assets/`; web 
 - odkazy na fotoalbumy 2024 a 2025,
 - video trate ročníka 2026,
 - praktické otázky a odpovede,
-- mobilné aj desktopové zobrazenie.
+- slogan „Každý krok píše príbeh“,
+- mobilné zobrazenie s rýchlou navigáciou a stále dostupnou registráciou.
 
 ## Spustenie na počítači
 

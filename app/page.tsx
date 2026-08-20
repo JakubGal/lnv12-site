@@ -27,6 +27,13 @@ export default function Home() {
           </a>
         </nav>
 
+        <nav className="mobile-nav shell" aria-label="Mobilná navigácia">
+          <a href="#o-vyzve">O výzve</a>
+          <a href="#vysledky">Výsledky</a>
+          <a href="#galeria">Galéria</a>
+          <a href="#otazky">Otázky</a>
+        </nav>
+
         <div className="hero-content shell">
           <div className="hero-copy">
             <p className="eyebrow">21. – 22. augusta 2026 · Ludanice</p>
@@ -35,9 +42,10 @@ export default function Home() {
               <span>Tvoj rytmus.</span><br />
               Jedna noc.
             </h1>
+            <p className="hero-slogan"><span>Každý krok</span> píše príbeh.</p>
             <p className="lede">
-              Nie je to závod, ale podujatie. Beh, turistika a nočné výhľady —
-              prejdi toľko kilometrov, koľko chceš a dokážeš.
+              Nie je to závod. Je to spoločná noc pre rodiny, partie aj jednotlivcov.
+              Bež alebo kráčaj a prejdi toľko kilometrov, koľko chceš a dokážeš.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href={REGISTRATION_URL} {...openNewTab}>
@@ -76,8 +84,8 @@ export default function Home() {
           </div>
           <div className="manifesto-copy">
             <p className="manifesto-lede">
-              LNV12 je noc pre bežcov, turistov aj všetkých, ktorí si chcú vyskúšať,
-              kam ich nohy a hlava pustia za dvanásť hodín.
+              LNV12 spája rodiny, partie aj jednotlivcov — od najmenších po
+              najstarších — v jednej spoločnej nočnej výzve.
             </p>
             <p>
               Tempo, vzdialenosť aj prestávky sú na tebe. Individuálny štart a koniec,
@@ -244,6 +252,11 @@ export default function Home() {
           <span>© 2026 LNV12</span><span>Vytvorené pre komunitu v Ludaniciach.</span>
         </div>
       </footer>
+
+      <nav className="mobile-action-bar" aria-label="Rýchle mobilné akcie">
+        <a href="#vysledky">Výsledky</a>
+        <a href={REGISTRATION_URL} {...openNewTab}>Registrovať sa <span aria-hidden="true">↗</span></a>
+      </nav>
     </main>
   );
 }
