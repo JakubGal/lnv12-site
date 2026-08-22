@@ -58,19 +58,19 @@ export const RESULT_YEARS: ResultYear[] = [
     highlights: [
       {
         label: "Beh",
-        name: "Michal Drienovský",
+        name: "Michal Drieňovský",
         distanceKm: 90,
         detail: "12 okruhov · najviac medzi bežcami",
       },
       {
         label: "Beh",
-        name: "Martin Bažila",
+        name: "Martin Bajla",
         distanceKm: 82.5,
         detail: "11 okruhov",
       },
       {
         label: "Beh",
-        name: "Ondrej Janovič",
+        name: "Ondrej Jančovič",
         distanceKm: 82.5,
         detail: "11 okruhov",
       },
@@ -82,7 +82,7 @@ export const RESULT_YEARS: ResultYear[] = [
       },
       {
         label: "Beh",
-        name: "Miroslav Nemeth",
+        name: "Miroslav Nemethy",
         distanceKm: 75,
         detail: "10 okruhov",
       },
@@ -106,7 +106,7 @@ export const RESULT_YEARS: ResultYear[] = [
       },
       {
         label: "Ocenenie",
-        name: "Helena Galová",
+        name: "Helena Gálová",
         detail: "najstaršia účastníčka · ročník narodenia 1945",
       },
       {
