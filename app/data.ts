@@ -42,10 +42,28 @@ export const RESULT_YEARS: ResultYear[] = [
   {
     year: "2026",
     label: "Aktuálny ročník",
-    title: "Výsledky ročníka 2026",
-    status: "21. – 22. augusta",
-    note: "Výsledky zverejníme po skončení podujatia.",
-    results: [],
+    title: "Štatistiky a najlepšie výkony · 2026",
+    status: "21. – 22. augusta 2026",
+    note: "Súhrn je spracovaný z prezenčných listín organizátorov. Jeden okruh mal 7,5 km.",
+    stats: [
+      { value: "263", label: "účastníkov" },
+      { value: "544", label: "okruhov" },
+      { value: "4 080 km", label: "spolu" },
+    ],
+    highlights: [
+      {
+        label: "Generácie",
+        name: "Ročníky narodenia 1947 – 2025",
+        detail: "najstarší a najmladší zapísaný ročník",
+      },
+    ],
+    results: [
+      { rank: 1, name: "Michal Drienovský", distanceKm: 90, category: "Beh · 12 okruhov" },
+      { rank: 2, name: "Martin Bažila", distanceKm: 82.5, category: "Beh · 11 okruhov" },
+      { rank: 2, name: "Ondrej Janovič", distanceKm: 82.5, category: "Beh · 11 okruhov" },
+      { rank: 4, name: "Ján Miroslav Furík", distanceKm: 75, category: "Beh · 10 okruhov" },
+      { rank: 4, name: "Miroslav Nemeth", distanceKm: 75, category: "Beh · 10 okruhov" },
+    ],
   },
   {
     year: "2025",
