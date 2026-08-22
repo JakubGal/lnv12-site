@@ -116,6 +116,7 @@ export const FACEBOOK_GROUP_URL =
   "https://www.facebook.com/groups/788216162580730/";
 
 export const PHOTO_ALBUMS = {
+  "2026": "https://photos.app.goo.gl/JQQRNWjiKKaZaVyR7",
   "2024": "https://photos.app.goo.gl/t44mW6GGp3nFvVn49",
   "2025": "https://photos.app.goo.gl/PcTa5WBSh8ub52ED9",
 } as const;

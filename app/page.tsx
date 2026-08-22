@@ -171,10 +171,15 @@ export default function Home() {
         </div>
 
         <div className="shell gallery-grid">
-          <article className="gallery-card gallery-card-image">
+          <a
+            className="gallery-card gallery-card-image gallery-card-link"
+            href={PHOTO_ALBUMS["2026"]}
+            aria-label="Otvoriť spoločnú fotogalériu LNV12 2026 a pridať fotografie"
+            {...openNewTab}
+          >
             <img src="/lnv12-2026-poster.webp" alt="Plagát Ludanickej nočnej výzvy 2026" />
-            <div className="gallery-overlay"><span>Aktuálny ročník</span><h3>2026</h3><p>Plagát, informácie a video trate</p></div>
-          </article>
+            <div className="gallery-overlay"><span>Spoločný album</span><h3>2026</h3><p>Pozrieť alebo pridať fotografie ↗</p></div>
+          </a>
           <a className="gallery-card gallery-card-image gallery-card-link" href={PHOTO_ALBUMS["2025"]} aria-label="Otvoriť fotogalériu LNV12 2025 v Google Fotkách" {...openNewTab}>
             <img src="/lnv12-2025-poster.png" alt="Plagát Ludanickej nočnej výzvy 2025" />
             <div className="gallery-overlay"><span>Google Fotky</span><h3>2025</h3><p>Otvoriť celý album ↗</p></div>
@@ -185,8 +190,8 @@ export default function Home() {
           </a>
         </div>
         <div className="shell gallery-cta">
-          <p>Ďalšie fotografie, výsledky a príbehy nájdeš v skupine Bežci spod Tribeča.</p>
-          <a href={FACEBOOK_GROUP_URL} {...openNewTab}>Otvoriť Facebook skupinu <span aria-hidden="true">↗</span></a>
+          <p>Máš fotografie z LNV12 2026? Pridaj ich do spoločného albumu, aby sme mali spomienky všetkých účastníkov pokope.</p>
+          <a href={PHOTO_ALBUMS["2026"]} {...openNewTab}>Pridať fotografie <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 

@@ -26,6 +26,8 @@ test("exports the complete Slovak LNV12 site", async () => {
   assert.match(html, /Janko Kušš/);
   assert.match(html, /t44mW6GGp3nFvVn49/);
   assert.match(html, /PcTa5WBSh8ub52ED9/);
+  assert.match(html, /JQQRNWjiKKaZaVyR7/);
+  assert.match(html, /Pridať fotografie/);
   assert.match(html, /lnv12-trail-2026\.mp4/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|SkeletonPreview/);
 });
