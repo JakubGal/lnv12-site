@@ -45,7 +45,7 @@ export const RESULT_YEARS: ResultYear[] = [
     label: "Aktuálny ročník",
     title: "Štatistiky a výrazné výkony · 2026",
     status: "21. – 22. augusta 2026",
-    note: "Súhrn je spracovaný z prezenčných listín organizátorov. Jeden okruh mal 7,5 km; chôdza je určená podľa označenia CH v listinách.",
+    note: "",
     stats: [
       { value: "263", label: "účastníkov" },
       { value: "544", label: "okruhov" },

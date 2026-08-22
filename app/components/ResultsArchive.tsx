@@ -96,14 +96,16 @@ export function ResultsArchive({ years }: { years: ResultYear[] }) {
               </div>
             ) : null}
 
-            <div className="archive-source">
-              <p>{active.note}</p>
-              {active.sourceUrl ? (
-                <a href={active.sourceUrl} target="_blank" rel="noreferrer">
-                  {active.sourceLabel ?? "Zobraziť zdroj"} <span aria-hidden="true">↗</span>
-                </a>
-              ) : null}
-            </div>
+            {active.note || active.sourceUrl ? (
+              <div className="archive-source">
+                {active.note ? <p>{active.note}</p> : null}
+                {active.sourceUrl ? (
+                  <a href={active.sourceUrl} target="_blank" rel="noreferrer">
+                    {active.sourceLabel ?? "Zobraziť zdroj"} <span aria-hidden="true">↗</span>
+                  </a>
+                ) : null}
+              </div>
+            ) : null}
           </div>
         ) : (
           <div className="empty-results">

@@ -38,6 +38,7 @@ test("exports the complete Slovak LNV12 site", async () => {
   assert.match(html, /najstaršia účastníčka · ročník narodenia 1945/);
   assert.match(html, /Juraj Goga · Vladimír Čerňan · Markéta Vrbická/);
   assert.doesNotMatch(html, />Poradie</);
+  assert.doesNotMatch(html, /Súhrn je spracovaný z prezenčných listín organizátorov/);
   assert.match(html, /t44mW6GGp3nFvVn49/);
   assert.match(html, /PcTa5WBSh8ub52ED9/);
   assert.match(html, /JQQRNWjiKKaZaVyR7/);
