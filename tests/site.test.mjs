@@ -32,7 +32,7 @@ test("exports the complete Slovak LNV12 site", async () => {
   assert.match(html, /3\s667,5(?:<!-- -->)? km/);
   assert.match(html, /412,5(?:<!-- -->)? km/);
   assert.match(html, /Pavol Uhlár/);
-  assert.match(html, /Andrea Skorčová/);
+  assert.match(html, /Andrea Škorčová/);
   assert.match(html, /Ondrej Danko/);
   assert.match(html, /Helena Gálová/);
   assert.match(html, /najstaršia účastníčka · ročník narodenia 1945/);

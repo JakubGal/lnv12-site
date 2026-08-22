@@ -94,7 +94,7 @@ export const RESULT_YEARS: ResultYear[] = [
       },
       {
         label: "Chôdza",
-        name: "Andrea Skorčová",
+        name: "Andrea Škorčová",
         distanceKm: 30,
         detail: "4 okruhy",
       },
