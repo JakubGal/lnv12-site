@@ -52,7 +52,12 @@ export function ResultsArchive({ years }: { years: ResultYear[] }) {
                   <article key={discipline.label}>
                     <span>{discipline.label}</span>
                     <strong>{discipline.distanceKm.toLocaleString("sk-SK")} km</strong>
-                    <small>{discipline.laps} okruhov</small>
+                    <small>
+                      {discipline.laps} okruhov
+                      {discipline.participants !== undefined
+                        ? ` · ${discipline.participants} účastníkov`
+                        : ""}
+                    </small>
                   </article>
                 ))}
               </div>

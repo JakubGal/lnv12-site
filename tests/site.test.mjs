@@ -28,7 +28,12 @@ test("exports the complete Slovak LNV12 site", async () => {
   assert.match(html, /Michal Drienovský/);
   assert.match(html, /Martin Bažila/);
   assert.match(html, /Ondrej Janovič/);
-  assert.match(html, /Ročníky narodenia 1947 – 2025/);
+  assert.match(html, /3\s667,5(?:<!-- -->)? km/);
+  assert.match(html, /412,5(?:<!-- -->)? km/);
+  assert.match(html, /Pavol Uhlár/);
+  assert.match(html, /Andrea Skorčová/);
+  assert.match(html, /Ondrej Danko/);
+  assert.match(html, /Juraj Goga · Vladimír Čerňan · Markéta Vrbická/);
   assert.match(html, /t44mW6GGp3nFvVn49/);
   assert.match(html, /PcTa5WBSh8ub52ED9/);
   assert.match(html, /JQQRNWjiKKaZaVyR7/);

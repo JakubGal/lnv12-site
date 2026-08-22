@@ -291,7 +291,7 @@ h1 span { color: var(--gold); }
 .archive-stats > div:last-child { border-right: 0; }
 .archive-stats strong { color: #0b2030; font: 900 clamp(32px, 5vw, 54px)/1 Impact, sans-serif; letter-spacing: .01em; }
 .archive-stats span { color: #78848b; font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
-.discipline-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 10px; }
+.discipline-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 10px; }
 .discipline-grid article { display: grid; gap: 5px; padding: 20px 22px; background: #0b2030; color: var(--paper); }
 .discipline-grid span { color: var(--gold); font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .discipline-grid strong { font-size: 21px; }

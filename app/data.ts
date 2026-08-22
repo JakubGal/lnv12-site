@@ -12,6 +12,7 @@ export type ArchiveStat = {
 
 export type DisciplineSummary = {
   label: string;
+  participants?: number;
   laps: number;
   distanceKm: number;
 };
@@ -44,17 +45,39 @@ export const RESULT_YEARS: ResultYear[] = [
     label: "Aktuálny ročník",
     title: "Štatistiky a najlepšie výkony · 2026",
     status: "21. – 22. augusta 2026",
-    note: "Súhrn je spracovaný z prezenčných listín organizátorov. Jeden okruh mal 7,5 km.",
+    note: "Súhrn je spracovaný z prezenčných listín organizátorov. Jeden okruh mal 7,5 km; chôdza je určená podľa označenia CH v listinách.",
     stats: [
       { value: "263", label: "účastníkov" },
       { value: "544", label: "okruhov" },
       { value: "4 080 km", label: "spolu" },
     ],
+    disciplines: [
+      { label: "Bežci", participants: 229, laps: 489, distanceKm: 3667.5 },
+      { label: "Chodci", participants: 34, laps: 55, distanceKm: 412.5 },
+    ],
     highlights: [
       {
-        label: "Generácie",
-        name: "Ročníky narodenia 1947 – 2025",
-        detail: "najstarší a najmladší zapísaný ročník",
+        label: "Chôdza",
+        name: "Pavol Uhlár",
+        distanceKm: 60,
+        detail: "8 okruhov · najviac medzi chodcami",
+      },
+      {
+        label: "Chôdza",
+        name: "Andrea Skorčová",
+        distanceKm: 30,
+        detail: "4 okruhy",
+      },
+      {
+        label: "Deti",
+        name: "Ondrej Danko",
+        distanceKm: 52.5,
+        detail: "7 okruhov · najlepší detský výkon",
+      },
+      {
+        label: "Ocenenie",
+        name: "Juraj Goga · Vladimír Čerňan · Markéta Vrbická",
+        detail: "najstarší účastníci · ročník narodenia 1947",
       },
     ],
     results: [
