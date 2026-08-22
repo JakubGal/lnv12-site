@@ -43,7 +43,7 @@ export const RESULT_YEARS: ResultYear[] = [
   {
     year: "2026",
     label: "Aktuálny ročník",
-    title: "Štatistiky a najlepšie výkony · 2026",
+    title: "Štatistiky a výrazné výkony · 2026",
     status: "21. – 22. augusta 2026",
     note: "Súhrn je spracovaný z prezenčných listín organizátorov. Jeden okruh mal 7,5 km; chôdza je určená podľa označenia CH v listinách.",
     stats: [
@@ -56,6 +56,36 @@ export const RESULT_YEARS: ResultYear[] = [
       { label: "Chodci", participants: 34, laps: 55, distanceKm: 412.5 },
     ],
     highlights: [
+      {
+        label: "Beh",
+        name: "Michal Drienovský",
+        distanceKm: 90,
+        detail: "12 okruhov · najviac medzi bežcami",
+      },
+      {
+        label: "Beh",
+        name: "Martin Bažila",
+        distanceKm: 82.5,
+        detail: "11 okruhov",
+      },
+      {
+        label: "Beh",
+        name: "Ondrej Janovič",
+        distanceKm: 82.5,
+        detail: "11 okruhov",
+      },
+      {
+        label: "Beh",
+        name: "Ján Miroslav Furík",
+        distanceKm: 75,
+        detail: "10 okruhov",
+      },
+      {
+        label: "Beh",
+        name: "Miroslav Nemeth",
+        distanceKm: 75,
+        detail: "10 okruhov",
+      },
       {
         label: "Chôdza",
         name: "Pavol Uhlár",
@@ -76,17 +106,16 @@ export const RESULT_YEARS: ResultYear[] = [
       },
       {
         label: "Ocenenie",
+        name: "Helena Galová",
+        detail: "najstaršia účastníčka · ročník narodenia 1945",
+      },
+      {
+        label: "Ocenenie",
         name: "Juraj Goga · Vladimír Čerňan · Markéta Vrbická",
-        detail: "najstarší účastníci · ročník narodenia 1947",
+        detail: "medzi najstaršími účastníkmi · ročník narodenia 1947",
       },
     ],
-    results: [
-      { rank: 1, name: "Michal Drienovský", distanceKm: 90, category: "Beh · 12 okruhov" },
-      { rank: 2, name: "Martin Bažila", distanceKm: 82.5, category: "Beh · 11 okruhov" },
-      { rank: 2, name: "Ondrej Janovič", distanceKm: 82.5, category: "Beh · 11 okruhov" },
-      { rank: 4, name: "Ján Miroslav Furík", distanceKm: 75, category: "Beh · 10 okruhov" },
-      { rank: 4, name: "Miroslav Nemeth", distanceKm: 75, category: "Beh · 10 okruhov" },
-    ],
+    results: [],
   },
   {
     year: "2025",
